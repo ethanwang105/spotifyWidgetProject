@@ -10,9 +10,9 @@ router.get("/", (req, response) => {
 
     const request = require('request');
 
-    const client_id = "your_client_id_here";
-    const client_secret = "your_client_secret_here";
-    const refresh_token = "your_refresh_token_here";
+    const client_id = "94b50a4823aa4731a6b55fd21df11d4a";
+    const client_secret = "05cd8e80ea0a4b04b15a0565bfcc3d82";
+    const refresh_token = "AQD8y94akZC2MZo3fjeXS3Cr02Ya7fnsga7S4NDR9nKFglS1Sz2A254mH";
 
     var authOptions = {
         url: 'https://accounts.spotify.com/api/token',
