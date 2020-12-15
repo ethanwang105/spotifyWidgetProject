@@ -1,22 +1,17 @@
 const express = require('express');
 const serverless = require('serverless-http');
-
 const app = express();
-
 const router = express.Router();
 
-
 router.get("/", (req, response) => {
-
     const request = require('request');
-
     const client_id = "94b50a4823aa4731a6b55fd21df11d4a";
     const client_secret = "05cd8e80ea0a4b04b15a0565bfcc3d82";
-    const refresh_token = "AQD8y94akZC2MZo3fjeXS3Cr02Ya7fnsga7S4NDR9nKFglS1Sz2A254mH";
+    const refresh_token = "AQCkkQIuAtf-NaRhZn3n7It83w31-tEMPJZkt2zD-DPjQKS9Ajwg1nm5wwk";
 
     var authOptions = {
         url: 'https://accounts.spotify.com/api/token',
-        headers: { 'Authorization': 'Basic ' + (new Buffer(client_id + ':' + client_secret).toString('base64')) },
+        headers: { 'Authorization': 'Basic ' + (Buffer.allocUnsafe(client_id + ':' + client_secret).toString('base64')) },
         form: { grant_type: 'refresh_token', refresh_token: refresh_token }
     };
 
