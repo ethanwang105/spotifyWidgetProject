@@ -11,7 +11,7 @@ router.get("/", (req, response) => {
 
     var authOptions = {
         url: 'https://accounts.spotify.com/api/token',
-        headers: { 'Authorization': 'Basic ' + (Buffer.allocUnsafe(client_id + ':' + client_secret).toString('base64')) },
+        headers: { 'Authorization': 'Basic ' + (Buffer.from(client_id + ':' + client_secret).toString('base64')) },
         form: { grant_type: 'refresh_token', refresh_token: refresh_token }
     };
 
