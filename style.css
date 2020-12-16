@@ -11,6 +11,8 @@ body {
     box-shadow: 4px 4px 8px #333;
     border-radius: 20px;
     padding: 16px;
+    border-width: 2px;
+    width: 500px;
 }
 
 #spotify {
