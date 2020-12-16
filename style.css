@@ -4,9 +4,16 @@ body {
     padding: 35vh 10px 40vh 10px;
     background: linear-gradient(to right, #f12711, #f5af19);
     font-family: 'Nunito', sans-serif;
+}
+
+info {
     border: 4px solid black;
     box-shadow: 4px 4px 8px #333;
     border-radius: 1px;
+}
+
+#spotify{
+    color: green;
 }
 
 #song_title, #artist {
