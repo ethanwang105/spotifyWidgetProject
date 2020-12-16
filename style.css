@@ -4,6 +4,8 @@ body {
     padding: 35vh 10px 40vh 10px;
     background: linear-gradient(to right, #f12711, #f5af19);
     font-family: 'Nunito', sans-serif;
+    width: 800px;
+    margin: 0 auto;
 }
 
 .info {
@@ -12,7 +14,7 @@ body {
     border-radius: 20px;
     padding: 16px;
     border-width: 2px;
-    width: 500px;
+    width: 900px;
 }
 
 #spotify {
