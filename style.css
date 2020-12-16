@@ -6,14 +6,15 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-info {
+.info {
     border: 4px solid black;
     box-shadow: 4px 4px 8px #333;
-    border-radius: 1px;
+    border-radius: 20px;
+    padding: 16px;
 }
 
-#spotify{
-    color: green;
+#spotify {
+    color: #1DB954;
 }
 
 #song_title, #artist {
